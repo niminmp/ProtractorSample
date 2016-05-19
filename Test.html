@@ -1,0 +1,26 @@
+<!--extends layout/_global//append head
+-->
+<header>
+  <meta name="robots" content="noindex, nofollow">
+  <script>
+    (function redirectToAppStore() {
+    
+      var userAgent = navigator.userAgent || navigator.vendor || window.opera;
+      var OSName = 'unknown-os';
+      
+      if( userAgent.match(/iPad/i) || userAgent.match(/iPhone/i) || userAgent.match(/iPod/i) ) {
+        OSName = 'iOS';
+      } else if( userAgent.match(/Android/i) ) {
+        OSName = 'Android';
+      } else {
+        OSName = 'unknown';
+      }
+      
+      if(OSName === 'iOS') {
+        window.location.href = 'https://itunes.apple.com/us/app/spark-business/id947974122?mt=8';
+      } else if(OSName === 'Android') {
+        window.location.href = ' https://play.google.com/store/apps/details?id=com.capitalone.nationalsmallbusiness.app&hl=en';
+      }
+    }());
+    
+  </script
